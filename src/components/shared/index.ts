@@ -1,0 +1,9 @@
+export { Container } from "./container";
+export { Title } from "./title";
+export { P5jsContainer } from "./p5jsContainer";
+export { Hero } from "./hero";
+export { About } from "./about";
+export { Experience } from './experience';
+export { PetProjects } from './pet-projects';
+export { Header } from './header';
+export { Footer } from "./footer";

@@ -1,0 +1,41 @@
+{
+    "technologies": [
+        "React.js",
+        "Next.js",
+        "JavaScript ES6+",
+        "Python",
+        "Django",
+        "FastAPI"
+    ],
+    "experience": [
+        {
+            "trigger_title": "freelance",
+            "content": {
+                "title": "Software Developer",
+                "company_name": "Self-employed",
+                "date": "Jun 2023 - Present",
+                "responsibilities": [
+                    "Created custom bots for Telegram and Discord, enhancing user engagement through personalized functionalities.",
+                    "Developed advanced web scrapers, including projects with Web3 integration, to extract and process data efficiently from various online sources.",
+                    "Built dynamic websites using Django and React.js, delivering robust, scalable, and responsive web applications tailored to client needs."
+                ]
+            }
+        }
+    ],
+    "projects": [
+        {
+            "title": "HarmonyBot",
+            "description": "A Telegram bot that helps download music from streaming services.",
+            "icon": "harmonyBot-logo.png",
+            "stack": ["Python", "PostgreSQL", "Telegram API"],
+            "link": "https://github.com/arnoldrudyi/HarmonyBot"
+        },
+        {
+            "title": "ChefBooklet",
+            "description": "A web application designed to help users discover recipes based on the ingredients they have on hand.",
+            "icon": "chefBooklet-logo.png",
+            "stack": ["Python (Django)", "PostgreSQL", "React.js"],
+            "link": "https://github.com/arnoldrudyi/chefbooklet-server"
+        }
+    ]
+}

@@ -47,7 +47,7 @@ export const Hero: React.FC<Props> = ({ className }) => {
             <Title size="lg" text="arnold"/>
           </div>
           <p className="max-w-[540px]">
-            I am a Python developer based in Budapest, Hungary. My passion lies in crafting cutting-edge, transformative products at the intersection of technology and innovation.
+            A web engineer based in Budapest, Hungary. My passion lies in crafting cutting-edge, transformative products at the intersection of technology and innovation.
           </p>
           <Button className="group relative" onClick={() => window.location.href = 'mailto:hi.arnoldrudyi@gmail.com'}>
             say hi

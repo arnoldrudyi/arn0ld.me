@@ -13,10 +13,7 @@ export const About: React.FC<Props> = ({ className, tech_stack }) => {
       <div className={cn('max-w-[540px]', className)}>
         <Title size="md" text="About me"/>
         <p>
-          I am a self-taught <b>Software Developer</b> with over <b>2.5 years of coding experience</b>. I specialize mostly on <b>backend development</b>, but I also enjoy creating visually appealing web pages using industry-leading frameworks.
-        </p>
-        <p>
-          My areas of interest also include machine learning, generative art, and the science of light.
+          I am a self-taught <b>Web Developer</b> with over <b>2.5 years of coding experience</b>. I specialize mostly on <b>backend development</b>, but I also enjoy creating visually appealing web pages using industry-leading frameworks.
         </p>
         <p>
           Here are some technologies I have been working with:
@@ -27,7 +24,7 @@ export const About: React.FC<Props> = ({ className, tech_stack }) => {
           ))}
         </ul>
         <p>
-          Outside of work, I am interested in following the latest advancements in computer science technologies.
+          My areas of interest also include machine learning, generative art, and the science of light.
         </p>
       </div>
    );

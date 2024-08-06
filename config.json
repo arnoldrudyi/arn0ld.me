@@ -1,7 +1,7 @@
 {
     "technologies": [
         "React.js",
-        "Next.js",
+        "TypeScript",
         "JavaScript ES6+",
         "Python",
         "Django",
@@ -25,7 +25,7 @@
     "projects": [
         {
             "title": "HarmonyBot",
-            "description": "A Telegram bot that helps download music from streaming services.",
+            "description": "A Telegram bot that helps to download music from streaming services.",
             "icon": "harmonyBot-logo.png",
             "stack": ["Python", "PostgreSQL", "Telegram API"],
             "link": "https://github.com/arnoldrudyi/HarmonyBot"
@@ -36,6 +36,13 @@
             "icon": "chefBooklet-logo.png",
             "stack": ["Python (Django)", "PostgreSQL", "React.js"],
             "link": "https://github.com/arnoldrudyi/chefbooklet-server"
+        },
+        {
+            "title": "Personal website",
+            "description": "Responsive website built with NextJS. Components are auto-generated for easy maintenance using config-based data management.",
+            "icon": "personalWebsite-logo.png",
+            "stack": ["TypeScript", "Next.js", "Tailwind CSS"],
+            "link": "https://github.com/arnoldrudyi/arn0ld.me"
         }
     ]
 }

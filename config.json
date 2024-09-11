@@ -24,17 +24,17 @@
     ],
     "projects": [
         {
-            "title": "HarmonyBot",
-            "description": "A Telegram bot that helps to download music from streaming services.",
-            "icon": "harmonyBot-logo.png",
-            "stack": ["Python", "PostgreSQL", "Telegram API"],
-            "link": "https://github.com/arnoldrudyi/HarmonyBot"
+            "title": "Lumea",
+            "description": "A web application designed to help users generate personalized study plans using AI.",
+            "icon": "lumea-logo.png",
+            "stack": ["Python (Django)", "PostgreSQL", "Llama 3.1", "Next.js", "Tailwind CSS"],
+            "link": "https://github.com/arnoldrudyi/lumea"
         },
         {
             "title": "ChefBooklet",
             "description": "A web application designed to help users discover recipes based on the ingredients they have on hand.",
             "icon": "chefBooklet-logo.png",
-            "stack": ["Python (Django)", "PostgreSQL", "React.js"],
+            "stack": ["Python (Django)", "PostgreSQL", "React.js", "Amazon S3"],
             "link": "https://github.com/arnoldrudyi/chefbooklet-server"
         },
         {
@@ -43,6 +43,13 @@
             "icon": "personalWebsite-logo.png",
             "stack": ["TypeScript", "Next.js", "Tailwind CSS"],
             "link": "https://github.com/arnoldrudyi/arn0ld.me"
+        },
+        {
+            "title": "HarmonyBot",
+            "description": "A Telegram bot that helps to download music from streaming services.",
+            "icon": "harmonyBot-logo.png",
+            "stack": ["Python", "PostgreSQL", "Telegram API"],
+            "link": "https://github.com/arnoldrudyi/HarmonyBot"
         }
     ]
 }

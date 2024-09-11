@@ -16,12 +16,14 @@ export const Container: React.FC<PropsWithChildren<Props>> = ({ className, child
    const setActiveSectionId = useSectionStore((state) => state.setActiveId);
    const intersectionRef = useRef(null);
    const intersection = useIntersection(intersectionRef, {
+     root: null,
+     rootMargin: '0px',
      threshold: 1,
    });
 
    useEffect(() => {
      if (intersection?.isIntersecting) {
-       setActiveSectionId(sectionId);
+      setActiveSectionId(Math.min(sectionId, 4));
      }
    }, [sectionId, intersection?.isIntersecting]);
 

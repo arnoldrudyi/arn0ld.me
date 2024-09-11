@@ -17,8 +17,13 @@ export const Header: React.FC<Props> = ({ className }) => {
    const switchMode = useModeStore((state) => state.switchMode);
    const activeSectionId = useSectionStore((state) => state.activeId);
    const [isRounded, setIsRounded] = useState(false);
+   const [hasMounted, setHasMounted] = useState(false);
    const [activeSectionPosition, setActiveSectionPosition] = useState(0);
-   
+
+   useEffect(() => {
+      setHasMounted(true);
+   }, []);
+
    useEffect(() => {
       const handleChange = (event: MediaQueryListEvent) => {
          if (event.matches && !darkMode) {
@@ -53,18 +58,30 @@ export const Header: React.FC<Props> = ({ className }) => {
            setActiveSectionPosition(iconRect.left - parentRect.left);
          }
       }
-    }, [activeSectionId]);
+   }, [activeSectionId]);
    
-   if (typeof window !== 'undefined') {
-      window.addEventListener('scroll', () => {
-         if (scrollY != 0) {
-            setIsRounded(true);
-         } else {
-            setIsRounded(false);
-         }
-      });
-   };
+   useEffect(() => {
+      if (hasMounted && typeof window !== 'undefined') {
+         const handleScroll = () => {
+            if (window.scrollY !== 0) {
+               setIsRounded(true);
+            } else {
+               setIsRounded(false);
+            }
+         };
+
+         window.addEventListener('scroll', handleScroll);
+
+         return () => {
+            window.removeEventListener('scroll', handleScroll);
+         };
+      }
+   }, [hasMounted]);
    
+   if (!hasMounted) {
+      return null;
+   }
+
    return (
       <div className={cn('absolute md:fixed w-full top-5 flex justify-center z-20', className)}>
         <div className='mx-auto w-[350px] sm:w-[500px] flex justify-end md:hidden'>

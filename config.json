@@ -9,11 +9,25 @@
     ],
     "experience": [
         {
+            "trigger_title": "onlineMinds",
+            "content": {
+                "title": "Python Developer",
+                "company_name": "OnlineMinds",
+                "date": "Oct 2024 - Present",
+                "responsibilities": [
+                    "Designed and implemented efficient solutions to enhance the company's web scraping infrastructure.",
+                    "Developed hundreds of web scrapers for a leading EU-based rental aggregator.",
+                    "Maintained and optimized the existing codebase, ensuring system stability and high performance.",
+                    "Collaborated with cross-functional teams to address challenges in data extraction and improve data quality."
+                ]
+            }
+        },
+        {
             "trigger_title": "freelance",
             "content": {
                 "title": "Software Developer",
                 "company_name": "Self-employed",
-                "date": "Jun 2023 - Present",
+                "date": "Jun 2023 - Oct 2024",
                 "responsibilities": [
                     "Created custom bots for Telegram and Discord, enhancing user engagement through personalized functionalities.",
                     "Developed web scrapers, including projects with Web3 integration, to extract and process data efficiently from various online sources.",

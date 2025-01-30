@@ -27,7 +27,7 @@ export const Experience: React.FC<Props> = ({ experience, className }) => {
       <div className={className}>
         <Title size="md" text="Experience"/>
         <p className='max-w-[540px]'>My professional journey, showcasing my skills and accomplishments in software development and related fields.</p>
-        <Tabs defaultValue='freelance' orientation='horizontal'>
+        <Tabs defaultValue='onlineMinds' orientation='horizontal'>
           <TabsList>
             {experience.map((job) => (
                 <TabsTrigger key={job.trigger_title} value={job.trigger_title}>{job.trigger_title.charAt(0).toUpperCase() + job.trigger_title.slice(1)}</TabsTrigger>
